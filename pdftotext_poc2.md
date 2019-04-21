@@ -1,5 +1,6 @@
-POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/pdftotext_poc2
+## NULL pointer dereference in TextLine::TextLine, xpdf/TextOutputDev.cc:804, pdftotext
 
+POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/pdftotext_poc2
 
 ```
 # ./pdftotext pdftotext_poc2
