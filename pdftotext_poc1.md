@@ -3,6 +3,8 @@
 POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/pdftotext_poc1
 
 ```
+# ./pdftotext pdftotext_poc1
+
 ASAN:SIGSEGV
 =================================================================
 ==4458==ERROR: AddressSanitizer: stack-overflow on address 0x7fffff7fefc0 (pc 0x7ffff624eea3 bp 0x7fffff801660 sp 0x7fffff7fefa0 T0)
@@ -314,3 +316,5 @@ Exploitability Classification: EXPLOITABLE
 Explanation: GDB generated an error while unwinding the stack and/or the stack contained return addresses that were not mapped in the inferior's process address space and/or the stack pointer is pointing to a location outside the default stack region. These conditions likely indicate stack corruption, which is generally considered exploitable.
 Other tags: DestAv (8/22), AccessViolation (21/22)
 ```
+
+This bug was found by [NESA Lab](https://nesa.zju.edu.cn).
