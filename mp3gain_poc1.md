@@ -3,7 +3,7 @@
 POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/mp3gain_poc1
 
 ```
-# ./3.mp3gain mp3gain_poc1
+# ./mp3gain mp3gain_poc1
 =================================================================
 ==20889==ERROR: AddressSanitizer: unknown-crash on address 0x60200000eeb5 at pc 0x00000042236e bp 0x7fffffff1b00 sp 0x7fffffff1af0
 READ of size 4 at 0x60200000eeb5 thread T0
