@@ -47,6 +47,68 @@ SUMMARY: AddressSanitizer: memcpy-param-overlap ??:0 __asan_memcpy
 Aborted
 ```
 
+```
+./mp3gain mp3gain_poc3
+mp3gain_poc3
+fatal error.  MAXFRAMESIZE not large enough.
+fatal error.  MAXFRAMESIZE not large enough.
+Recommended "Track" dB change: -4.700000
+Recommended "Track" mp3 gain change: -3
+WARNING: some clipping may occur with this gain change!
+Max PCM sample at current gain: 12792886124736674426985638455937444411271456856027240145723853411857493627294669318713917964030732817587451039710264115093054312142410882793487886211546846160119687396883441600078624727086370680264618294922894153210150564315510797704577217423263658826384134729830583015206567373729003468777769799904133120.000000
+Max mp3 global gain field: 174
+Min mp3 global gain field: 16
+
+
+Recommended "Album" dB change for all files: -4.700000
+Recommended "Album" mp3 gain change for all files: -3
+WARNING: with this global gain change, some clipping may occur in file mp3gain_poc3
+*** buffer overflow detected ***: /d/p/justafl/3.mp3gain terminated
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x7ffff777b7e5]
+/lib/x86_64-linux-gnu/libc.so.6(__fortify_fail+0x5c)[0x7ffff781d15c]
+/lib/x86_64-linux-gnu/libc.so.6(+0x117160)[0x7ffff781b160]
+/lib/x86_64-linux-gnu/libc.so.6(+0x1166c9)[0x7ffff781a6c9]
+/lib/x86_64-linux-gnu/libc.so.6(_IO_default_xsputn+0x80)[0x7ffff777f6b0]
+/lib/x86_64-linux-gnu/libc.so.6(+0x5225a)[0x7ffff775625a]
+/lib/x86_64-linux-gnu/libc.so.6(_IO_vfprintf+0x1f49)[0x7ffff77530b9]
+/lib/x86_64-linux-gnu/libc.so.6(__vsprintf_chk+0x84)[0x7ffff781a754]
+/lib/x86_64-linux-gnu/libc.so.6(__sprintf_chk+0x7d)[0x7ffff781a6ad]
+/d/p/justafl/3.mp3gain[0x41e4a6]
+/d/p/justafl/3.mp3gain[0x406afd]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7ffff7724830]
+/d/p/justafl/3.mp3gain[0x410929]
+======= Memory map: ========
+00400000-0045d000 r-xp 00000000 08:12 181141537                          /d/p/justafl/3.mp3gain
+0065d000-0065e000 r--p 0005d000 08:12 181141537                          /d/p/justafl/3.mp3gain
+0065e000-0065f000 rw-p 0005e000 08:12 181141537                          /d/p/justafl/3.mp3gain
+0065f000-00b3c000 rw-p 00000000 00:00 0                                  [heap]
+7ffff74ee000-7ffff7504000 r-xp 00000000 00:49 89                         /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ffff7504000-7ffff7703000 ---p 00016000 00:49 89                         /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ffff7703000-7ffff7704000 rw-p 00015000 00:49 89                         /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ffff7704000-7ffff78c4000 r-xp 00000000 00:49 39                         /lib/x86_64-linux-gnu/libc-2.23.so
+7ffff78c4000-7ffff7ac4000 ---p 001c0000 00:49 39                         /lib/x86_64-linux-gnu/libc-2.23.so
+7ffff7ac4000-7ffff7ac8000 r--p 001c0000 00:49 39                         /lib/x86_64-linux-gnu/libc-2.23.so
+7ffff7ac8000-7ffff7aca000 rw-p 001c4000 00:49 39                         /lib/x86_64-linux-gnu/libc-2.23.so
+7ffff7aca000-7ffff7ace000 rw-p 00000000 00:00 0
+7ffff7ace000-7ffff7bd6000 r-xp 00000000 00:49 93                         /lib/x86_64-linux-gnu/libm-2.23.so
+7ffff7bd6000-7ffff7dd5000 ---p 00108000 00:49 93                         /lib/x86_64-linux-gnu/libm-2.23.so
+7ffff7dd5000-7ffff7dd6000 r--p 00107000 00:49 93                         /lib/x86_64-linux-gnu/libm-2.23.so
+7ffff7dd6000-7ffff7dd7000 rw-p 00108000 00:49 93                         /lib/x86_64-linux-gnu/libm-2.23.so
+7ffff7dd7000-7ffff7dfd000 r-xp 00000000 00:49 32                         /lib/x86_64-linux-gnu/ld-2.23.so
+7ffff7fed000-7ffff7ff1000 rw-p 00000000 00:00 0
+7ffff7ff7000-7ffff7ff8000 rw-p 00000000 00:00 0
+7ffff7ff8000-7ffff7ffa000 r--p 00000000 00:00 0                          [vvar]
+7ffff7ffa000-7ffff7ffc000 r-xp 00000000 00:00 0                          [vdso]
+7ffff7ffc000-7ffff7ffd000 r--p 00025000 00:49 32                         /lib/x86_64-linux-gnu/ld-2.23.so
+7ffff7ffd000-7ffff7ffe000 rw-p 00026000 00:49 32                         /lib/x86_64-linux-gnu/ld-2.23.so
+7ffff7ffe000-7ffff7fff000 rw-p 00000000 00:00 0
+7ffffffde000-7ffffffff000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+Program received signal SIGABRT, Aborted.
+```
+
 corresponding source code:
 
 ```
