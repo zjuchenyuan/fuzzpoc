@@ -1,4 +1,4 @@
-## memcpy-param-overlap, set_pointer, mpglibDBL/common.c:328, mp3gain 1.5.2
+## buffer overflow (memcpy-param-overlap), set_pointer, mpglibDBL/common.c:328, mp3gain 1.5.2
 
 POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/mp3gain_poc3
 
