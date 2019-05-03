@@ -1,9 +1,9 @@
 ## global-buffer-overflow, _nc_find_entry, tinfo/comp_hash.c:66, ncurses 6.1
 
-POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/infotocap_poc
+POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/infotocap_poc2
 
 ```
-# ./infotocap -o /dev/null infotocap_poc
+# ./infotocap -o /dev/null infotocap_poc2
 =================================================================
 ==34623==ERROR: AddressSanitizer: global-buffer-overflow on address 0x00000050f946 at pc 0x000000449f0b bp 0x7fffffffb450 sp 0x7fffffffb440
 READ of size 2 at 0x00000050f946 thread T0
