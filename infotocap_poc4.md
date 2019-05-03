@@ -1,6 +1,6 @@
 ## stack-buffer-overflow, fmt_entry, progs/dump_entry.c:1116, ncurses 6.1
 
-Note: This is different from [CVE-2017-10684](https://bugzilla.redhat.com/show_bug.cgi?id=1464687), which crashes on line 1131 `len += (int) strlen(capability) + 1; `
+Note: This is different from [CVE-2017-10684](https://bugzilla.redhat.com/show_bug.cgi?id=1464687), which crashes on line 1131 `len += (int) strlen(capability) + 1; `, besides we cannot verify CVE-2017-10684 poc on ncurses 6.1.
 
 POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/infotocap_poc4
 
