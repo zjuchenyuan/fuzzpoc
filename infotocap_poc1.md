@@ -3,7 +3,7 @@
 POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/infotocap_poc1
 
 ```
-# ./infotocap -o /dev/null infotocap_poc
+# ./infotocap -o /dev/null infotocap_poc1
 ==34599==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x61c00000ff4e at pc 0x000000440933 bp 0x7ffffffeb1f0 sp 0x7ffffffeb1e0
 READ of size 1 at 0x61c00000ff4e thread T0
     #0 0x440932 in one_one_mapping ../progs/dump_entry.c:1373
