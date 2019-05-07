@@ -2,6 +2,10 @@
 
 POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/pdftotext_poc1
 
+Another POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/pdftotext_poc3
+
+also impact `pdfinfo`, `pdftops`
+
 ```
 # ./pdftotext pdftotext_poc1
 
