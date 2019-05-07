@@ -1,5 +1,7 @@
 ## stack-overflow in Parser::getObj, pdftotext, xpdf-4.01
 
+>Current version: 4.01.01 Released: 2019 Mar 14
+
 POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/pdftotext_poc1
 
 Another POC: https://github.com/zjuchenyuan/fuzzpoc/raw/master/pdftotext_poc3
